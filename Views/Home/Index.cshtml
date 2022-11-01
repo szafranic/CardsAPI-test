@@ -1,0 +1,10 @@
+﻿@model CurrentDeck
+<div style="display:flex">
+@foreach(Card c in Model.cards){
+	<div style="width:230px;">
+	<img src="@c.image">
+	<hr>
+	<p>@c.value of @c.suit</p>
+	</div>
+}
+</div>
